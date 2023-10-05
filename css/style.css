@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 20px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.container h1 {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.container form {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+}
+.container form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.container form label input {
+  all: unset;
+  padding: 8px 18px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+.container form button {
+  padding: 8px 18px;
+  background-color: #24a0ed;
+  border-color: #24a0ed;
+  border-radius: 8px;
+}
+.container table {
+  width: 100%;
+  border-spacing: 8px;
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+.modal .modal-dialog {
+  padding: 20px;
+  width: 500px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  background-color: white;
+  border-radius: 14px;
+}
+.modal .modal-dialog form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  background-color: white;
+  width: 100%;
+}
+.modal .modal-dialog form input {
+  width: 94%;
+}
+.modal .modal-dialog form .cancel {
+  background-color: brown;
+  border-color: brown;
+}
+
+.show {
+  display: flex !important;
+}

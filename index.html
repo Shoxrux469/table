@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&family=PT+Sans&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>добавление, изменение и удаление элемента из таблицы</h1>
+        <form action="" name="pers_data">
+            <label for="name">
+                Имя
+                <input data-name type="text" id="name">
+            </label>
+            <label for="age">
+                Возраст
+                <input data-age type="number" id="age">
+            </label>
+            <button type="submit">Добавить</button>
+        </form> 
+        <table>
+        </table>
+        <!-- <table class="sec_tb"></table> -->
+        <div class="modal">
+            <div class="modal-dialog">
+                <form action="" name="changeTodo">
+                    <input class="fixInpName" type="text" placeholder="name">
+                    <input class="fixInpAge" type="text" placeholder="age">
+                    <button type="submit">change</button>
+                    <button data-close class="cancel" type="button">cancel</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
