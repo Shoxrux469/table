@@ -77,8 +77,8 @@ function reload(list) {
 
         item.name = fixInpName.value;
         td1.innerHTML = fixInpName.value;
-        item.age = fixInpAge.value;
-        td2.innerHTML = fixInpAge.value;
+        item.age = new Date().getFullYear() - fixInpAge.value;
+        td2.innerHTML = new Date().getFullYear() - fixInpAge.value;
         modal.classList.remove("show");
         changeForm.reset();
       };
